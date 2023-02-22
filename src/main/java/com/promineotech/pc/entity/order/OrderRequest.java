@@ -11,47 +11,47 @@ import lombok.Data;
 
 @Data
 public class OrderRequest {
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String customer;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String cpu;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String cpuCooler;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String motherboard;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String memory;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String storage;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String videoCard;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String pcCase;
   
-@NotNull
+  @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String powerSupply;

@@ -21,7 +21,7 @@ public class CreateOrderTestSupport extends BaseTest{
         + "  \"pc_case\":\"O11D_XL_X\",\n"
         + "  \"power_supply\":\"RM850X_2021\",\n"
         + "  \"accessories\":[\n"
-        + "    \"TUF_GAMING_VG289Q1A\",\n"
+        + "    \"TUF_GAMING_VG289Q1A\"\n"
         + "  ]\n"
         + "}";
     //@formatter:on

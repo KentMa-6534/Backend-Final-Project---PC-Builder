@@ -38,8 +38,9 @@ public interface PcOrderController {
       responses = {
           @ApiResponse(responseCode = "201",
               description = "The created PC is returned",
-              content =  @Content(mediaType = "application/json",
-              schema = @Schema(implementation = Order.class))),
+              content =  @Content(
+                  mediaType = "application/json",
+                  schema = @Schema(implementation = Order.class))),
           @ApiResponse(responseCode = "400", 
               description = "The request parameters are invalid",  
               content =  @Content(mediaType = "application/json")),
