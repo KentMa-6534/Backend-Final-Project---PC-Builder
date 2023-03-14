@@ -26,7 +26,7 @@ import com.promineotech.pc.entity.video_card.VideoCardBrand;
  *
  */
 public interface PcSalesRepository {
-
+  //Methods to read different items in database tables.
   List<Cpu> fetchCpus(CpuBrand cpuBrand, String name);
 
   /**

@@ -27,7 +27,10 @@ import com.promineotech.pc.entity.video_card.VideoCard;
 import com.promineotech.pc.entity.video_card.VideoCardBrand;
 import com.promineotech.pc.repository.PcSalesRepository;
 import lombok.extern.slf4j.Slf4j;
-
+/*
+ * Service tells Spring to manage entity services since all entities are targets for Bean Injection.
+ * PCSalesService interface.
+ */
 @Service
 @Slf4j
 public class DefaultPcSalesService implements PcSalesService {

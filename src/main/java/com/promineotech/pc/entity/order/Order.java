@@ -3,6 +3,8 @@
  */
 package com.promineotech.pc.entity.order;
 
+import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.promineotech.pc.entity.accessories.Accessories;
@@ -17,7 +19,9 @@ import com.promineotech.pc.entity.storage.Storage;
 import com.promineotech.pc.entity.video_card.VideoCard;
 import lombok.Builder;
 import lombok.Data;
-
+/*
+ * Contains all entity classes necessary to create a POST operation for an order in this application.
+ */
 @Data
 @Builder
 public class Order {
@@ -32,9 +36,11 @@ public class Order {
   private PcCase pcCase;
   private PowerSupply powerSupply;
   private List<Accessories> accessories;
+  private BigDecimal price;
   
   @JsonIgnore
   public Long getOrderPK() {
     return orderPK;
   }
-}
+  }
+

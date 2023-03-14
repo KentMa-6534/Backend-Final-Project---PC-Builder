@@ -8,7 +8,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 import lombok.Data;
-
+/*
+ * Contains filters to ensure valid characters and length are being put into the database.
+ */
 @Data
 public class OrderRequest {
   @NotNull
@@ -56,5 +58,5 @@ public class OrderRequest {
   @Pattern(regexp = "[\\w\\s]*")
   private String powerSupply;
   
-  private List<@NotNull @Length(max = 40) @Pattern(regexp = "[\\w\\s]*")String> accessories;
+  private List<@Length(max = 40) @Pattern(regexp = "[\\w\\s]*")String> accessories;
 }

@@ -12,7 +12,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+/*
+ * The CpuCooler class contains all information related to an order's CPU cooler.
+ */
 @Data
 @Builder
 @NoArgsConstructor

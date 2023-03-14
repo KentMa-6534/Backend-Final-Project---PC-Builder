@@ -32,7 +32,9 @@ import com.promineotech.pc.entity.storage.Storage;
 import com.promineotech.pc.entity.video_card.VideoCard;
 import com.promineotech.pc.entity.video_card.VideoCardBrand;
 import lombok.extern.slf4j.Slf4j;
-
+/*
+ * GET methods for all entities except Order
+ */
 @Component
 @Slf4j
 public class DefaultPcSalesRepository implements PcSalesRepository {

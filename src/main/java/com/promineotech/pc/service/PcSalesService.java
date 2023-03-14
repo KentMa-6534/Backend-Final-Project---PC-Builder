@@ -23,7 +23,8 @@ import com.promineotech.pc.entity.video_card.VideoCardBrand;
 
 /**
  * @author Kent Ma
- *
+ * Allows controller level to be built after interface is created and allows service layer 
+ * to be built while controller is active. Allows for easier mocking implementation. 
  */
 public interface PcSalesService {
   

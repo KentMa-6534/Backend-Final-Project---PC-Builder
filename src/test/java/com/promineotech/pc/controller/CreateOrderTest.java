@@ -21,6 +21,7 @@ import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlConfig;
 import com.promineotech.pc.controller.support.CreateOrderTestSupport;
 import com.promineotech.pc.entity.order.Order;
+import com.promineotech.pc.entity.order.OrderRequest;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
@@ -42,6 +43,7 @@ class CreateOrderTest extends CreateOrderTestSupport{
    
    HttpEntity<String> bodyEntity= new HttpEntity<>(body, headers);
    
+   System.out.println(bodyEntity);
    //When: The order is sent
    ResponseEntity<Order> response = getRestTemplate().exchange(uri, HttpMethod.POST, bodyEntity, Order.class);
    //Then: a 201 status is returned

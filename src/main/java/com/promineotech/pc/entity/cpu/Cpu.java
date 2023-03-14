@@ -10,7 +10,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+/*
+ * The Cpu class contains all information related to an order's CPU.
+ */
 @Data
 @Builder
 @NoArgsConstructor

@@ -29,7 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author Kent Ma
- *
+ * Contains GET functionality for all entities except Order.
  */
 @RestController
 @Slf4j

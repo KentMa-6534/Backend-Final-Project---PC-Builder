@@ -13,7 +13,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+/*
+ * The Memory class contains all information related to an order's memory configuration.
+ */
 @Data
 @Builder
 @NoArgsConstructor

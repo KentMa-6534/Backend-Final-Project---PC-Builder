@@ -13,7 +13,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+/*
+ * The VideoCard class contains all information related to an order's graphics card.
+ */
 @Data
 @Builder
 @NoArgsConstructor

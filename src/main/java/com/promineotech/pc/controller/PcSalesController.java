@@ -37,7 +37,9 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.servers.Server;
-
+/*
+ * This controller contains GET operations for all entities in the application except Order.
+ */
 @Validated
 @RequestMapping("/pc-builder/search")
 @OpenAPIDefinition(info = @Info(title = "CPU Sales Service"),
